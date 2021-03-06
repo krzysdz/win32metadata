@@ -200,3 +200,5 @@ IIdentityAdvise::IdentityUpdated::dwIdentityUpdateEvents=IdentityUpdateEvent
 CryptQueryObject::dwObjectType=CERT_QUERY_OBJECT_TYPE
 CryptQueryObject::dwExpectedContentTypeFlags=CERT_QUERY_CONTENT_FLAGS
 CryptQueryObject::dwExpectedFormatTypeFlags=CERT_QUERY_FORMAT_FLAGS
+CryptQueryObject::pdwContentType=CERT_QUERY_CONTENT_TYPE*
+CryptQueryObject::pdwFormatType=CERT_QUERY_FORMAT*
