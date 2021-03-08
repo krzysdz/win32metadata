@@ -151,7 +151,8 @@ namespace ClangSharpSourceToWinmd
                 if (diag.Id == "CS0246")
                 {
                     var symbolNameRegx = new System.Text.RegularExpressions.Regex(@"The type or namespace name '(\w+)'");
-                    var match = symbolNameRegx.Match(diag.GetMessage());
+                    var culture = new System.Globalization.CultureInfo("en-US");
+                    var match = symbolNameRegx.Match(diag.GetMessage(culture));
                     if (match.Success)
                     {
                         var symbolName = match.Groups[1].Value;
