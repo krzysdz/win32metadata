@@ -4,6 +4,18 @@ using Windows.Win32.Interop;
 
 namespace Windows.Win32.Security
 {
+    public static unsafe partial class Apis
+    {
+        public const uint CERT_ENCODING_TYPE_MASK = 0x0000FFFF;
+        public const uint CMSG_ENCODING_TYPE_MASK = 0xFFFF0000;
+        public const uint CRYPT_ASN_ENCODING = 0x00000001;
+        public const uint CRYPT_NDR_ENCODING = 0x00000002;
+        public const uint X509_ASN_ENCODING = 0x00000001;
+        public const uint X509_NDR_ENCODING = 0x00000002;
+        public const uint PKCS_7_ASN_ENCODING = 0x00010000;
+        public const uint PKCS_7_NDR_ENCODING = 0x00020000;
+    }
+
     [Flags]
     public enum CREDUI_FLAGS
     {
